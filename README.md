@@ -10,6 +10,14 @@ This isn't perfect solution but meets needs for testing for now
 
 download and make game into biofoundry.zip
 
+```
+chmod +x download_biofoundry.sh
+```
+
+```
+./download_biofoundry.sh
+```
+
 setting permissions
 
 ```
