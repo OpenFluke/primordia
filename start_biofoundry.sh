@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for i in $(seq 1 100); do
+for i in $(seq 1 50); do
   host_udp=$((10000 + (i-1)*3))
   host_tcp=$((10001 + (i-1)*3))
   host_workers=$((10002 + (i-1)*3))
