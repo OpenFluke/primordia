@@ -7,7 +7,9 @@ for i in $(seq 1 100); do
 
   podman run -d \
     --name bio$i \
-    --network host \
+    -p $base_udp:$base_udp/udp \
+    -p $base_tcp:$base_tcp/tcp \
+    -p $base_workers:$base_workers/tcp \
     -e UDPPORT=$base_udp \
     -e TCPPORT=$base_tcp \
     -e TCPWORKERS=$base_workers \
